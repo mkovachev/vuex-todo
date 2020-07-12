@@ -11,8 +11,12 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
-  name: "AddTodo"
+  name: "AddTodo",
+  methods: {
+    ...mapActions
+  }
 };
 </script>
 
